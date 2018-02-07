@@ -8,7 +8,7 @@ namespace ConsoleApp5
 {
     public abstract class Continent
     {
-        public abstract void newHerbivore();
-        public abstract void newCarnivore();
+        public abstract Herbivore newHerbivore();
+        public abstract Carnivore newCarnivore();
     }
 }

@@ -8,14 +8,18 @@ namespace ConsoleApp5
 {
     class Africa : Continent
     {
-        public override void newHerbivore()
+        public override Herbivore newHerbivore()
         {
             Herbivore herbivore = new Wildebeest();
+            Console.WriteLine("Wildwest created");
+            return herbivore;
         }
 
-        public override void newCarnivore()
+        public override Carnivore newCarnivore()
         {
             Carnivore carnivore = new Lion();
+            Console.WriteLine("Lion created");
+            return carnivore;
         }
     }
 }

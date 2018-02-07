@@ -8,14 +8,16 @@ namespace ConsoleApp5
 {
     class Eurasia : Continent
     {
-        public override void newHerbivore()
+        public override Herbivore newHerbivore()
         {
             Herbivore herbivore = new Elk();
+            return herbivore;
         }
 
-        public override void newCarnivore()
+        public override Carnivore newCarnivore()
         {
             Carnivore carnivore = new Tiger();
+            return carnivore;
         }
     }
 }

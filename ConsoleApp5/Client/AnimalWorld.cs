@@ -16,16 +16,27 @@ namespace ConsoleApp5
             set => continent = value;
         }
 
-        
+        public Herbivore CreateHerbivore(Continent cont)
+        {
+            return cont.newHerbivore();
+        }
+
+        public Carnivore CreateCarnivore(Continent cont)
+        {
+            return cont.newCarnivore();
+        }
 
         public void MealsHerbivores(Herbivore herbivore)
         {
             herbivore.EatGrass();
+            Console.WriteLine("herbivore ate");
         }
 
         public void NutritionCarnivores(Carnivore carnivore, Herbivore herbivore)
         {
             carnivore.Eat(carnivore, herbivore);
+            Console.WriteLine("carnivore ate");
+
         }
     }
 }

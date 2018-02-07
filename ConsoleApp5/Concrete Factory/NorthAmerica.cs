@@ -8,14 +8,16 @@ namespace ConsoleApp5
 {
     class NorthAmerica : Continent
     {
-        public override void newHerbivore()
+        public override Herbivore newHerbivore()
         {
             Herbivore herbivore = new Bison();
+            return herbivore;
         }
 
-        public override void newCarnivore()
+        public override Carnivore newCarnivore()
         {
             Carnivore carnivore = new Wolf();
+            return carnivore;
         }
     }
 }
